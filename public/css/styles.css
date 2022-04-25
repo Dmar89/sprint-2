@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+article img{
+    width: 30%;
+    padding: 5%;
+}
+article input{
+    width: 10%;
+}
+
+article a{
+    padding-right: 10px;
+}
+
+article label {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+article{
+    display: flex;
+    margin-left: 10px;
+    border: solid 1px red;
+    border-radius: 15px;
+    background-color: rgb(197, 203, 209);
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+article div{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* article input{
+    width: 10%;
+} */
