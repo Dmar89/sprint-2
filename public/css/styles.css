@@ -7,6 +7,12 @@ i{
     margin-bottom: 10px;
 }
 
+/* section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
 .carro{
     font-size: 16px;
     font-style: italic;
@@ -92,10 +98,24 @@ div.resumen{
 
 div.detalle-cart{
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
+    flex-wrap: wrap;
+    
     justify-content: space-between;
     align-items: center;
+}
+
+.products-pr {
+    text-align: right;
+
+}
+.envio-tipo{
+    text-align: right;
+}
+
+div.detalle-cart p{
+    width: 50%;
+
 }
 
 div.comprar{
@@ -104,6 +124,14 @@ div.comprar{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     font-weight: bold;
+    justify-content: center;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.promocion{
+    display: flex;
     justify-content: center;
 }
 
