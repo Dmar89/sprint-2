@@ -28,7 +28,7 @@ i{
     flex-direction: column;
     justify-content: space-around;
     /* border: solid 1px black; */
-    align-items: center;
+    /* align-items: center; */
     
 }
 
@@ -54,9 +54,9 @@ article{
     
     /* border-radius: 15px; */
     /* margin-left: 10px; */
-    /* border: solid 1px blue; */
+    border: solid 1px black;
     /* border-radius: 15px; */
-    background-color: rgb(240, 234, 234);
+    /* background-color: rgb(240, 234, 234); */
     width: 100%;
     /* flex-wrap: wrap;
     flex-direction: row;
@@ -71,11 +71,33 @@ article div{
     align-items: center;
 }
 
+.btn-segcompr{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-segcompr i{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
 
 .detalle-pago{
     display: flex;
+    padding: 5%;
     /* margin-left: 10px; */
-    border: solid 1px rgb(22, 20, 20);
+    border: solid 2px black;
     width: 90%;
     border-radius: 10px;
     margin: auto; 
@@ -84,16 +106,25 @@ article div{
     /* align-items: center; */
     /* margin: 1px;
     border: 10px; */
-    background-color:rgb(199, 99, 238);
+    background-color:lightgray;
 }
 
 div.resumen{
     display: flex;
     flex-direction: row;
+    border-bottom: solid 1px white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     font-weight: bold;
+    font-style: italic;
     justify-content: center;
+    align-items: center;
+}
+
+.resumen i{
+    margin-right: 10px;
+    color: white;
+    font-size: 25px;
 }
 
 div.detalle-cart{
@@ -128,6 +159,7 @@ div.comprar{
 }
 .total{
     display: flex;
+    /* border-top: dashed 1px black; */
     justify-content: space-between;
 }
 .promocion{
@@ -138,3 +170,19 @@ div.comprar{
 /* div.detalle-cart p{
     width: 50%;
 } */
+@media(min-width:769px){
+    .body-cart {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .detalle-compra{
+        width: 45%
+        
+    }
+    .detalle-pago{
+        width: 45%;
+    }
+  }
